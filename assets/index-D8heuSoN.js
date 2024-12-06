@@ -268,7 +268,7 @@ The factorial of 5 is 120`,explanation:"This Python program calculates the facto
         return 1
     else:
         return n * factorial(n-1)
-num = int(input("Enter a number: "))
+num = int(input("Enter the number: "))
 print("The factorial of", num, "is", factorial(num))`,output:`Enter the number: 6
 The factorial of 6 is 720`,explanation:"This Python program calculates the factorial of a given number using recursion. A factorial is the product of all positive integers less than or equal to a given number n. The function factorial(n) is defined recursively: if n is 0, the function returns 1 (since the factorial of 0 is defined as 1). Otherwise, it multiplies n by the result of calling factorial(n-1), which keeps breaking the problem down until it reaches 0. The program prompts the user to input a number (num), calls the factorial function with that number, and prints the calculated factorial."},{id:"N19",name:"19.Python Program to check a given number is even or odd.",code:`def even_odd(num):
     if num % 2 == 0:
