@@ -1,0 +1,170 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global font family */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header style */
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Programs Grid */
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Program card style */
+.program-card {
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home page styles */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Program page styles */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 95%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-content {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-default {
+  background-color: #ddd;
+  color: #333;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-info {
+  background-color: teal;
+  color: white;
+}
+.card-explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9; /* Soft background color for better contrast */
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Subtle border for structure */
+  font-size: 16px; /* Clear and legible font size */
+  line-height: 1.6; /* Better line spacing for readability */
+  color: #333; /* Neutral text color */
+}
+
+.card-explanation h3 {
+  font-size: 20px; /* Slightly larger for section header */
+  margin-bottom: 10px; /* Space below the heading */
+  color: #555; /* Softer heading color */
+}
+
+.card-explanation p {
+  margin: 0;
+  text-align: justify; /* Align text for a cleaner appearance */
+}
+
+.card-output,
+.card-explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eef;
+  border-radius: 8px;
+}
+
+.card-output pre,
+.card-explanation p {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .programs,
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card,
+  .category-card {
+    width: 90%;
+  }
+}
